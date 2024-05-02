@@ -20,7 +20,8 @@ user = User()
 def get_random_number():
     return randint(1, 100)
 
-#create gile <Token.txt> and write into your token
+
+# create gile <Token.txt> and write into your token
 BOT_TOKEN: str
 with open("Token.txt") as f:
     BOT_TOKEN = f.read()
