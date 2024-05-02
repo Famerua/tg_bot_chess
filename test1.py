@@ -4,7 +4,10 @@ from aiogram.types import Message
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
-BOT_TOKEN = ""
+# create gile <Token.txt> and write into your token
+BOT_TOKEN: str
+with open("Token.txt") as f:
+    BOT_TOKEN = f.read()
 
 # Создаем объекты бота и диспетчера
 bot = Bot(token=BOT_TOKEN)
